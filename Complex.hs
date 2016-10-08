@@ -11,7 +11,11 @@ complex1 = Complex 2 (-3)
 
 -- complex number with negative real and positive imaginary part 
 complex2 :: Complex
-complex2 = Complex (-4) 2 
+complex2 = Complex (-4) 2
+
+-- takes two numbers and wraps them to the complex type
+toComplex :: Int -> Int -> Complex
+toComplex a b = (Complex a b)  
 
 -- prints a complex number in the form of 'a +/- bi'
 complexToString :: Complex -> String
